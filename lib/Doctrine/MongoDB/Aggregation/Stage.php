@@ -226,7 +226,7 @@ abstract class Stage
      *
      * @see http://docs.mongodb.org/manual/reference/operator/aggregation/match/
      *
-     * @return Stage\Match
+     * @return Stage\MatchStage
      */
     public function match()
     {

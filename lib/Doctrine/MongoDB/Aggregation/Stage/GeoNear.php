@@ -11,7 +11,7 @@ use GeoJson\Geometry\Point;
  * @author alcaeus <alcaeus@alcaeus.org>
  * @since 1.2
  */
-class GeoNear extends Match
+class GeoNear extends MatchStage
 {
     /**
      * @var string

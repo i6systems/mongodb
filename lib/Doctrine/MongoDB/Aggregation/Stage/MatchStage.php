@@ -13,7 +13,7 @@ use GeoJson\Geometry\Geometry;
  * @author alcaeus <alcaeus@alcaeus.org>
  * @since 1.2
  */
-class Match extends Stage
+class MatchStage extends Stage
 {
     /**
      * @var Expr

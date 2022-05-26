@@ -50,7 +50,7 @@ class GraphLookup extends Stage
     private $depthField;
 
     /**
-     * @var Stage\GraphLookup\Match
+     * @var Stage\GraphLookup\MatchStage
      */
     private $restrictSearchWithMatch;
 
@@ -70,11 +70,11 @@ class GraphLookup extends Stage
     }
 
     /**
-     * @return GraphLookup\Match
+     * @return GraphLookup\MatchStage
      */
     protected function createMatchObject()
     {
-        return new Stage\GraphLookup\Match($this->builder, $this);
+        return new Stage\GraphLookup\MatchStage($this->builder, $this);
     }
 
     /**
@@ -198,7 +198,7 @@ class GraphLookup extends Stage
     /**
      * A document specifying additional conditions for the recursive search.
      *
-     * @return GraphLookup\Match
+     * @return GraphLookup\MatchStage
      */
     public function restrictSearchWithMatch()
     {

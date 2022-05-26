@@ -5,9 +5,9 @@ namespace Doctrine\MongoDB\Aggregation\Stage\GraphLookup;
 use Doctrine\MongoDB\Aggregation\Builder;
 use Doctrine\MongoDB\Aggregation\Expr;
 use Doctrine\MongoDB\Aggregation\Stage\GraphLookup;
-use Doctrine\MongoDB\Aggregation\Stage\Match as BaseMatch;
+use Doctrine\MongoDB\Aggregation\Stage\MatchStage as BaseMatch;
 
-class Match extends BaseMatch
+class MatchStage extends BaseMatch
 {
     /**
      * @var GraphLookup
